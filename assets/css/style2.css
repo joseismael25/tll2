@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #4b6584;
+  --text-color: #ffffff;
+  --background-color: #1e272e;
+  --white-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1b1b1b, #2d3436, #3c6382);
+  color: white;
+  padding: 30px;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* =========================
+MENU
+========================= */
+
+.contenedor-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  list-style: none;
+
+  padding: 20px;
+  margin-bottom: 20px;
+
+  background: linear-gradient(135deg, #2f3640, #353b48);
+  border-radius: 12px;
+}
+
+.contenedor-menu li {
+  list-style: none;
+}
+
+.contenedor-menu a {
+  display: block;
+
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+  padding: 12px 25px;
+
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #485460, #2f3640);
+
+  transition: 0.3s;
+}
+
+.contenedor-menu a:hover {
+  transform: scale(1.05);
+
+  background: linear-gradient(135deg, #57606f, #2f3542);
+}
+
+/* =========================
+SECCIONES
+========================= */
+
+section {
+  background: #2f3640;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+TITULOS
+========================= */
+
+h1 {
+  background: linear-gradient(135deg, #3c6382, #0a3d62);
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  background: linear-gradient(135deg, #485460, #2f3640);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+PARRAFOS
+========================= */
+
+p {
+  background: #353b48;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+MULTIMEDIA
+========================= */
+
+.contenedor-audio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  padding: 20px;
+
+  background: linear-gradient(135deg, #2f3640, #3c6382);
+
+  border-radius: 12px;
+}
+
+.contenedor-audio audio {
+  width: 100%;
+}
+
+/* =========================
+GRID
+========================= */
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.grid-cell {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.header-cell {
+  grid-column: 1/4;
+  background: #3c6382;
+}
+
+.aside-cell {
+  background: #485460;
+}
+
+.main-cell {
+  background: #576574;
+}
+
+.widget1-cell {
+  background: #2f3640;
+}
+
+.widget2-cell {
+  background: #0a3d62;
+}
+
+.footer-cell {
+  grid-column: 1/4;
+  background: #1e272e;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+  background: #2f3640;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
